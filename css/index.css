@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html{
@@ -65,12 +66,60 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
 section, footer{
     padding:4% 0;
 }
 .container {
     width: 80%;
     margin: 0 auto;
+}
+/* Header Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.logo img {
+    width: 20%
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.footer_links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 /*Top Section Styles*/
@@ -87,32 +136,70 @@ section, footer{
 .top-content .text-container {
     width: 35%;
     padding: 0 1%;
-    padding-bottom: 4%;  
+    padding-bottom: 4%  
 }
 
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.middle-content .boxes .box {
-    background: black;
+/*.middle-content */ .boxes {
     margin: 4% 0;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+
+ .box1 {
+    background:teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5{
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10 {
+    background: dodgerblue;
+} 
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -132,9 +219,50 @@ section, footer{
 footer {
     width: 100%;
     background-color: #ff4b00;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer_links a {
+    color: white;
 }
 
 /*About Page Styles*/
 
+.about-top-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    text-align: justify;
+}
 
+.about-middle-content-top{
+    display: flex;
+    justify-items: space-between;
+}
+
+.about-middle-content-bottom{
+    display: flex;
+}
+
+.strategy{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.how-we-work{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.places-we-work{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.collaboration{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
 /*Responsive Styles*/
