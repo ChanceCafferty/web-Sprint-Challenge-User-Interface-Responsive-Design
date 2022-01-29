@@ -161,6 +161,7 @@ header {
 }
 
 
+
  .box1 {
     background:teal;
 }
@@ -239,7 +240,6 @@ footer {
 
 .about-middle-content-top{
     display: flex;
-    justify-items: space-between;
 }
 
 .about-middle-content-bottom{
@@ -266,3 +266,34 @@ footer {
     border-bottom: 2px solid #ff4b00;
 }
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+}
