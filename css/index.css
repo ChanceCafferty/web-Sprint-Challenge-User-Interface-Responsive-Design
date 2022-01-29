@@ -154,51 +154,62 @@ header {
     margin: 4% 0;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: center; */
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    
 }
 
 
 
  .box1 {
+    padding: 5%;
     background:teal;
 }
 
 .box2 {
+    padding: 5%;
     background: gold;
 }
 
 .box3 {
+    padding: 5%;
     background: cadetblue;
 }
 
 .box4 {
+    padding: 5%;
     background: coral;
 }
 
 .box5{
+    padding: 5%;
     background: crimson;
 }
 
 .box6 {
+    padding: 5%;
     background: forestgreen;
 }
 
 .box7 {
+    padding: 5%;
     background: darkorchid;
 }
 
 .box8 {
+    padding: 5%;
     background: hotpink;
 }
 
 .box9 {
+    padding: 5%;
     background: indigo;
 }
 
 .box10 {
+    padding: 5%;
     background: dodgerblue;
 } 
 
