@@ -82,21 +82,29 @@ section, footer{
 /* Header Styles */
 nav {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
-    
+    justify-content: center;
+    width: 60%;
+    /* text-align: center; */
+    margin: auto;
 }
 
 .logo{
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    /* width: 100%; */
     padding: 2% 0;
+    padding-left: 0;
+    margin-left: 0;
+    height: 10%;
+    
 }
 
 .logo img {
-    width: 20%
+    /* display: flex; */
+    max-width: 100px;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .links {
@@ -116,11 +124,16 @@ nav {
 }
 
 header {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    
 
 }
+
 
 /*Top Section Styles*/
 
@@ -143,6 +156,9 @@ header {
 .middle-content {
     margin-bottom: 4%;
     border-bottom: 2px solid #ff4b00;
+    box-sizing: border-box;
+    height: 100%;
+    
 }
 
 .middle-content h2 {
@@ -150,66 +166,102 @@ header {
 }
 
 
-/*.middle-content */ .boxes {
+ .boxes {
     margin: 4% 0;
+    padding: 5%;
     color: white;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    flex-flow: row wrap;
-    justify-content: space-evenly; 
     
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: center;  */
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    height: 60vh;
+    
+    gap: 2em;
+    border: 2px dashed blueviolet;
 }
 
 
 
  .box1 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background:teal;
 }
 
 .box2 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: gold;
 }
 
 .box3 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: cadetblue;
 }
 
 .box4 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: coral;
 }
 
 .box5{
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: crimson;
 }
 
 .box6 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: forestgreen;
 }
 
 .box7 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: darkorchid;
 }
 
 .box8 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: hotpink;
 }
 
 .box9 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: indigo;
 }
 
 .box10 {
     padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
     background: dodgerblue;
 } 
 
@@ -293,12 +345,67 @@ footer {
         width: 100%;
     }
 
-    .boxes{
+
+
+    .boxes {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
+        height: min-content;
+        
     }
+
+    .box1 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box2 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box3 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box4 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box5 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box6 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box7 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box8 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box9 {
+        min-height: 35%;
+        width: 40%;
+    }
+
+    .box10 {
+        min-height: 35%;
+        width: 40%;
+    }
+
 
     .bottom-content{
         display: flex;
