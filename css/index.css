@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html{
@@ -65,6 +66,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
 section, footer{
     padding:4% 0;
 }
@@ -72,47 +79,174 @@ section, footer{
     width: 80%;
     margin: 0 auto;
 }
+/* Header Styles */
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2% 0;
+    padding-left: 0;
+    margin-left: 0;
+    height: 10%;
+}
+
+.logo img {
+    max-width: 100px;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
 
 /*Top Section Styles*/
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 4%;
     border-bottom: 2px solid #ff4b00;
     text-align: justify;
 }
 
+.top-content h2 {
+    display: flex;
+    justify-content: center;
+}
+
 .top-content .text-container {
     width: 35%;
     padding: 0 1%;
-    padding-bottom: 4%;  
+    padding-bottom: 4%  
 }
 
 /*Middle Section Styles*/
+
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .middle-content h2 {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.middle-content .boxes .box {
-    background: black;
+ .boxes {
     margin: 4% 0;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    height: 30vh;
+    gap: 2em;
 }
+
+
+
+ .box1 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background:teal;
+}
+
+.box2 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: gold;
+}
+
+.box3 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: cadetblue;
+}
+
+.box4 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: coral;
+}
+
+.box5{
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: crimson;
+}
+
+.box6 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: forestgreen;
+}
+
+.box7 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: darkorchid;
+}
+
+.box8 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: hotpink;
+}
+
+.box9 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+    
+    background: indigo;
+}
+
+.box10 {
+    padding: 5%;
+    width: 15%;
+    height: fit-content;
+
+    background: dodgerblue;
+} 
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -130,11 +264,297 @@ section, footer{
 
 /*Footer Styles*/
 footer {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     background-color: #ff4b00;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
 }
 
 /*About Page Styles*/
 
+.about-top-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    text-align: justify;
+}
 
+.about-middle-content-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-middle-content-top .strategy {
+    width: 45%;
+}
+
+.strategy .text-container {
+    margin-bottom: 4%;
+}
+
+.about-middle-content-top .how-we-work {
+    width: 45%;
+}
+
+.how-we-work .text-container {
+    margin-bottom: 4%;
+}
+
+.about-middle-content-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-middle-content-bottom .places-we-work {
+    width: 45%;
+}
+
+.places-we-work .text-container {
+    margin-bottom: 4%;
+}
+
+.about-middle-content-bottom .collaboration {
+    width: 45%;
+}
+
+.collaboration .text-container {
+    margin-bottom: 4%;
+}
+
+.strategy{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.how-we-work{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.places-we-work{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.collaboration{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+}
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+    
+    
+    
+    .top-content .text-container {
+        width: 100%;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .middle-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: min-content;
+        justify-content: space-evenly;
+        
+
+        max-width: 70%;
+        
+    }
+
+    .box1 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box2 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box3 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box4 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box5 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box6 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box7 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box8 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box9 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .box10 {
+        padding: 6%;
+        min-height: 35%;
+        width: 26%;
+    }
+
+    .bottom-content .text-container {
+        width: 80%;
+    }
+
+    .bottom-content h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    footer nav {
+        display: flex;
+        align-content: space-evenly;
+    }
+
+    .container about-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-middle-content-top {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .about-middle-content-top h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-middle-content-top .strategy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .strategy {
+        margin-top: 3%;
+    }
+    
+
+    .about-middle-content-top .how-we-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .how-we-work {
+        margin-top: 6%;
+    }
+
+    .about-middle-content-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-middle-content-bottom h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-middle-content-bottom .places-we-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-middle-content-bottom .collaboration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .collaboration{
+        margin-top: 6%;
+    }
+
+    .about-bottom-content {
+        margin-bottom: 4%;
+    }
+
+    .about-bottom-content h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+}
