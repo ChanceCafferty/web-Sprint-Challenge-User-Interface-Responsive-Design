@@ -115,13 +115,13 @@ nav {
     color: black;
 }
 
-.footer_links{
+/* footer nav .footer-links{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: white;
-}
+} */
 
 header {
     
@@ -130,9 +130,13 @@ header {
     justify-content: center;
     max-width: 80%;
     margin: auto;
-    
-
 }
+
+/* header .header_img {
+    object-fit: inherit;
+    width: 300vh;
+    border: 2px dashed greenyellow;
+} */
 
 
 /*Top Section Styles*/
@@ -140,10 +144,15 @@ header {
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 4%;
     border-bottom: 2px solid #ff4b00;
     text-align: justify;
+}
+
+.top-content h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .top-content .text-container {
@@ -176,11 +185,9 @@ header {
     /* align-content: center; */
     /* justify-content: center;  */
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-around; 
     height: 60vh;
-    
     gap: 2em;
-    border: 2px dashed blueviolet;
 }
 
 
@@ -281,12 +288,16 @@ header {
 
 /*Footer Styles*/
 footer {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     background-color: #ff4b00;
     font-family: 'Roboto', sans-serif;
 }
 
-.footer_links a {
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
     color: white;
 }
 
@@ -303,10 +314,44 @@ footer {
 
 .about-middle-content-top{
     display: flex;
+    justify-content: space-between;
+}
+
+.about-middle-content-top .strategy {
+    width: 45%;
+}
+
+.strategy .text-container {
+    margin-bottom: 4%;
+}
+
+.about-middle-content-top .how-we-work {
+    width: 45%;
+}
+
+.how-we-work .text-container {
+    margin-bottom: 4%;
 }
 
 .about-middle-content-bottom{
     display: flex;
+    justify-content: space-between;
+}
+
+.about-middle-content-bottom .places-we-work {
+    width: 45%;
+}
+
+.places-we-work .text-container {
+    margin-bottom: 4%;
+}
+
+.about-middle-content-bottom .collaboration {
+    width: 45%;
+}
+
+.collaboration .text-container {
+    margin-bottom: 4%;
 }
 
 .strategy{
@@ -331,6 +376,13 @@ footer {
 /*Responsive Styles*/
 
 @media (max-width: 500px) {
+    
+    
+    
+    .top-content .text-container {
+        width: 100%;
+    }
+    
     nav{
         display: flex;
         flex-direction: column;
@@ -341,10 +393,16 @@ footer {
     .top-content{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 100%;
     }
 
+    .middle-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
     .boxes {
@@ -353,57 +411,70 @@ footer {
         align-items: center;
         width: 100%;
         height: min-content;
+        justify-content: center;
+        
+
+        max-width: 70%;
         
     }
 
     .box1 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box2 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box3 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box4 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box5 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box6 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box7 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box8 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box9 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
     }
 
     .box10 {
         min-height: 35%;
-        width: 40%;
+        width: 26%;
+    }
+
+    .bottom-content .text-container {
+        width: 80%;
+    }
+
+    .bottom-content h2{
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -411,7 +482,94 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: space-evenly;
+        justify-content: space-evenly;
         width: 100%;
+    }
+
+    footer nav {
+        display: flex;
+        align-content: space-evenly;
+    }
+
+    .container about-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-middle-content-top {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .about-middle-content-top h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-middle-content-top .strategy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .strategy {
+        margin-top: 3%;
+    }
+    
+
+    .about-middle-content-top .how-we-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .how-we-work {
+        margin-top: 6%;
+    }
+
+    .about-middle-content-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-middle-content-bottom h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-middle-content-bottom .places-we-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-middle-content-bottom .collaboration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .collaboration{
+        margin-top: 6%;
+    }
+
+    .about-bottom-content {
+        margin-bottom: 4%;
+    }
+
+    .about-bottom-content h2 {
+        display: flex;
+        justify-content: center;
     }
 
 }
