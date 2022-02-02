@@ -124,7 +124,6 @@ nav {
 } */
 
 header {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,6 +166,8 @@ header {
     border-bottom: 2px solid #ff4b00;
     box-sizing: border-box;
     height: 100%;
+    padding: 0%;
+
     
 }
 
@@ -177,16 +178,12 @@ header {
 
  .boxes {
     margin: 4% 0;
-    padding: 5%;
+    padding: 0% 0%;
     color: white;
     display: flex;
-    
-    /* align-items: center; */
-    /* align-content: center; */
-    /* justify-content: center;  */
     flex-wrap: wrap;
     justify-content: space-around; 
-    height: 60vh;
+    height: 30vh;
     gap: 2em;
 }
 
@@ -269,7 +266,7 @@ header {
     width: 15%;
     height: fit-content;
     
-    background: dodgerblue;
+    background: dodgerblue;;
 } 
 
 /*Bottom Section Styles*/
